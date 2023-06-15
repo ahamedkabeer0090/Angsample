@@ -1,0 +1,29 @@
+<p>login works!</p>
+<div class="box">
+    <div class="form">
+        <form action="#to Destination" method="post">
+            <h2><b>LOGIN</b></h2>
+            <div class="inputbox">
+                <input type="text" id="Username" required="required" [(ngModel)]="userName" name="username"/>
+                <span>USER NAME</span>
+                <span id="result"> </span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" id="Password" required="required" [(ngModel)]="pswd" name="pswd="/>
+                <span>PASSWORD</span>
+                <span id="result"> </span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forget Password?</a>
+                <a href="/register">SignUp</a>
+            </div>
+            <input type="button" (click)="userLogin()" value="LOGIN">
+            
+        </form>
+       
+    </div>
+</div>
+
+    
